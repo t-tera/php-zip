@@ -208,7 +208,7 @@ class ZipEntry
         $this->setCharset($charset);
 
         if ($this->charset === null && !StringUtil::isASCII($name)) {
-            $this->enableUtf8Name(true);
+            //$this->enableUtf8Name(true); // t-tera
         }
         $this->name = $name;
         $this->isDirectory = ($length = \strlen($name)) >= 1 && $name[$length - 1] === '/';

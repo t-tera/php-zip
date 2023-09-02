@@ -677,7 +677,8 @@ class ZipFile implements \Countable, \ArrayAccess, \Iterator
         return $zipEntry;
     }
 
-    protected function addZipEntry(ZipEntry $zipEntry): void
+    //protected function addZipEntry(ZipEntry $zipEntry): void
+    public function addZipEntry(ZipEntry $zipEntry): void // t-tera
     {
         $this->zipContainer->addEntry($zipEntry);
     }

@@ -193,7 +193,7 @@ class ZipEntry
      */
     private function setName(string $name, ?string $charset = null): self
     {
-        $name = ltrim($name, '\\/');
+        //$name = ltrim($name, '\\/'); // t-tera
 
         if ($name === '') {
             throw new InvalidArgumentException('Empty zip entry name');

@@ -196,7 +196,7 @@ class ZipEntry
         //$name = ltrim($name, '\\/'); // t-tera
 
         if ($name === '') {
-            throw new InvalidArgumentException('Empty zip entry name');
+            //throw new InvalidArgumentException('Empty zip entry name'); // t-tera
         }
 
         $length = \strlen($name);
